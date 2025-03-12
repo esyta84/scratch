@@ -1,0 +1,27 @@
+# vSphere connection details
+vsphere_user     = "administrator@vsphere.local"
+vsphere_password = "your-password"
+vsphere_server   = "vcenter.example.com"
+
+# vSphere infrastructure details
+datacenter    = "Datacenter"
+datastore     = "datastore1"
+cluster       = "Cluster"
+resource_pool = "Resources"
+network       = "VM Network"
+template      = "ubuntu-20.04-template"
+
+# VM configuration
+vm_name          = "terraform-vm"
+num_cpus         = 2
+memory           = 4096
+disk_size        = 20
+thin_provisioned = true
+folder           = "VMs"
+
+# Network configuration
+# Leave ipv4_address and ipv4_gateway as null to use DHCP
+ipv4_address     = "192.168.1.100"
+ipv4_netmask     = 24
+ipv4_gateway     = "192.168.1.1"
+domain           = "example.local" 

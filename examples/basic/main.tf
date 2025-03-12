@@ -1,3 +1,21 @@
+terraform {
+  required_providers {
+    vsphere = {
+      source  = "hashicorp/vsphere"
+      version = "~> 2.4.0"
+    }
+  }
+  required_version = ">= 1.0.0"
+  
+  cloud {
+    organization = var.tfe_organization
+    
+    workspaces {
+      name = var.tfe_workspace
+    }
+  }
+}
+
 provider "vsphere" {
   user                 = var.vsphere_user
   password             = var.vsphere_password

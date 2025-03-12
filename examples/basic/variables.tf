@@ -14,6 +14,17 @@ variable "vsphere_server" {
   type        = string
 }
 
+# Terraform Enterprise configuration
+variable "tfe_organization" {
+  description = "The Terraform Enterprise organization name"
+  type        = string
+}
+
+variable "tfe_workspace" {
+  description = "The Terraform Enterprise workspace name"
+  type        = string
+}
+
 variable "datacenter" {
   description = "The name of the datacenter"
   type        = string

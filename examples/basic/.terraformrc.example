@@ -1,0 +1,12 @@
+credentials "app.terraform.io" {
+  token = "YOUR_TERRAFORM_ENTERPRISE_TOKEN"
+}
+
+# For custom Terraform Enterprise installations, use your hostname instead:
+# credentials "tfe.example.com" {
+#   token = "YOUR_TERRAFORM_ENTERPRISE_TOKEN"
+# }
+
+# Optional: Configure CLI behavior
+plugin_cache_dir   = "$HOME/.terraform.d/plugin-cache"
+disable_checkpoint = true 

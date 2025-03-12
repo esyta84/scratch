@@ -1,3 +1,7 @@
+# Terraform Enterprise configuration
+tfe_organization = "your-organization"
+tfe_workspace    = "vsphere-vm-workspace"
+
 # vSphere connection details
 vsphere_user     = "administrator@vsphere.local"
 vsphere_password = "your-password"
